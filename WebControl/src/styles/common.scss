@@ -1,0 +1,187 @@
+.button {
+  & {
+    width: fit-content;
+    margin: 0;
+    margin-top: 5px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 2px solid #ffffff61;
+  }
+
+  &:hover {
+    background-color: #ffffff42;
+    cursor: pointer;
+  }
+}
+
+@mixin grid($width, $height) {
+  & {
+    .element-card {
+      box-shadow: 0px 0px 4px 1px rgba(white, 0.3);
+      opacity: 1 !important;
+    }
+    .element-selector {
+      background-color: unset !important;
+      margin: 0 25px;
+    }
+    .element-cards-grid {
+      padding-top: 10px;
+      grid-column-gap: 25px;
+      grid-row-gap: 25px;
+      grid-template-columns: repeat(auto-fill, $width) !important;
+      grid-template-rows: repeat(auto-fill, $height) !important;
+    }
+    .element-card {
+      width: $width !important;
+      height: $height !important;
+    }
+    .element-selector::-webkit-scrollbar-track {
+      background-color: rgba(255,255,255, 0.2);
+      border-radius: 8px;
+    }
+    .element-selector::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    .element-selector::-webkit-scrollbar:vertical {
+      width: 12px;
+    }
+    .element-selector::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background-color: #d67358bf;
+    }
+  } 
+}
+
+@mixin card-list($card-height) {
+  position: relative;
+  width: 100%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+
+  .scrollable {
+    background-color: #0000001a;
+    height: #{$card-height * 1.4}px;
+    width: 80vw;
+    margin: 0;
+    border-radius: 15px;
+    padding-inline-start: 20px;
+    padding: 5px 20px;
+    box-shadow: inset 0 0 11px 0px #0000003b;
+    white-space: nowrap; 
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    > div {
+      height: #{$card-height}px;
+      margin: 15px 5px;
+      display: inline-block;
+      min-width: fit-content;
+    }
+  }
+}
+
+@mixin color-param() {
+  & {
+    display: inline-flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 5px;
+    border-left: 10px solid transparent;
+    padding: 7px 8px 3px 10px;
+  }
+  .dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: inline-block;
+  }
+  &.active {
+    border-radius: 5px;
+    border-left: 10px solid $primary-color;
+  }
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  p {
+    margin: 0;
+    color: #cececeaf;
+  }
+}
+
+.slider-label {
+  margin: 0;
+}
+
+@mixin group-header() {
+  $border-radius: 7px !default;
+  & {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2px 20px;
+    position: relative;
+    background-color: #00000029;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    min-height: fit-content;
+
+    i {
+      font-size: 20px;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 5px;
+      color: $primary-color;
+      font-size: 18px;
+    }
+    input {
+      font-size: 18px;
+    }
+  }
+}
+
+@mixin wannabe-group-header() {
+  @include group-header();
+  width: 100%;
+  background-color: #262c36 !important;
+  height: 44px;
+  align-items: center !important;
+}
+
+@mixin wannabe-object-group() {
+  & {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: $card-background-color;
+  }
+}
+
+.tutorial-text {
+  color: $primary-color;
+  opacity: 0.8;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 10px 10px;
+  margin: 0, 4px;
+  background-color: rgba(black, 0.3);
+  border-radius: 7px;
+}

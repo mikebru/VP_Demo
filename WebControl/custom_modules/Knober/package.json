@@ -1,0 +1,10 @@
+{
+  "name": "knober",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "https://github.com/shiasn",
+  "license": "MIT"
+}

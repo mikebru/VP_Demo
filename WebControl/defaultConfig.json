@@ -1,0 +1,28 @@
+{
+  "cachedConfigDefaults": {
+    "developerMode": false,
+    "pollingDelay": 700,
+    "debug": false,
+    "enablePolling": true,
+    "enableCaching": false,
+    "fetchActors": false,
+    "fetchActorsInterval": 1000,
+    "requestTimeout": 1000
+  },
+  "configDefaults": {
+    "stageExtents": {"horizontal" : 300, "forward" : 300 },
+    "colorPickerScaleFactor": 2,
+    "lightCardTypes": [
+	    {
+        "name": "Circle",
+        "imageName": "Circle.jpg",
+        "classPath": "/Circle/"
+      },
+	    {
+        "name": "Square",
+        "imageName": "Square.jpg",
+        "classPath": "/Square/"
+      }
+    ]
+  }
+}

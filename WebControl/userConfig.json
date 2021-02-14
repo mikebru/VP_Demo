@@ -1,0 +1,19 @@
+{
+  "objectPaths": {
+    "stageOrigin": "/Game/Maps/Main.Main:PersistentLevel.BP_WebControlDisplay",
+    "mannequin": "/Game/Maps/Main.Main:PersistentLevel.WebControlMannequinStatic_2",
+    "cineCamera": "/Game/Maps/Main.Main:PersistentLevel.InnerFrustumCamera_2",
+    "ppSettingsVolume": "/Game/Maps/Main.Main:PersistentLevel.WebControlPostProcess",
+    "nDisplayGreenScreen": "/Game/Maps/Main.Main:PersistentLevel.GreenScreenPlane.StaticMeshComponent0",
+    "nDisplayStageSettings": "/Game/Maps/Main.Main:PersistentLevel.BP_IncameraStageSettings_2",
+    "defaultChromakeyMarker": "/Game/Blueprints/SceneAdjustment/Chromakey/DemoChromakeyMarker.DemoChromakeyMarker"
+  },
+  "managerClasses": {
+    "remoteControlUtility": "/Game/Blueprints/SceneAdjustment/BP_RemoteControlUtilities.BP_RemoteControlUtilities_C",
+    "lightCardManager": "/Game/Blueprints/SceneAdjustment/LightCards/BP_LightCardManager.BP_LightCardManager_C",
+    "eventManager": "/Game/Blueprints/SceneAdjustment/BP_EventManager.BP_EventManager_C",
+    "wallAdjustmentManager": "/Game/Blueprints/SceneAdjustment/BP_WallAdjustmentManager.BP_WallAdjustmentManager_C",
+    "outerCameraControl": "/nDisplay/Blueprints/ReprojectionCamera/BP_OuterCameraControl.BP_OuterCameraControl_C",
+    "cameraSettings": "/nDisplay/Blueprints/ReprojectionCamera/BP_IncameraSettings.BP_IncameraSettings_C"
+  }
+}

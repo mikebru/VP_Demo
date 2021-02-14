@@ -1,0 +1,36 @@
+{
+  "name": "remote-unreal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint --fix"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "colorpicker": "file:custom_modules/ColorPicker",
+    "joystick": "file:custom_modules/Joystick",
+    "knober": "file:custom_modules/Knober",
+    "lodash.throttle": "^4.1.1",
+    "nobounce": "file:custom_modules/NoBounce",
+    "p-retry": "^4.1.0",
+    "radialmenu": "file:custom_modules/RadialMenu",
+    "rangeslider": "file:custom_modules/RangeSlider",
+    "vue": "^2.6.10",
+    "vue-clickaway": "^2.2.2",
+    "vue-iro-color-picker": "^2.0.0",
+    "vue2-hammer": "^2.1.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
