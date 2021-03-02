@@ -80,6 +80,10 @@
 		{
 			"Name": "RemoteControl",
 			"Enabled": true
+		},
+		{
+			"Name": "MixedRealityCaptureFramework",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
