@@ -21,16 +21,6 @@
 			]
 		},
 		{
-			"Name": "SteamVR",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Win32",
-				"Win64",
-				"Linux",
-				"Mac"
-			]
-		},
-		{
 			"Name": "SequencerScripting",
 			"Enabled": true
 		},
@@ -83,6 +73,10 @@
 		},
 		{
 			"Name": "MixedRealityCaptureFramework",
+			"Enabled": true
+		},
+		{
+			"Name": "LiveLinkXR",
 			"Enabled": true
 		}
 	],

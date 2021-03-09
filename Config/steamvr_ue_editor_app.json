@@ -1,0 +1,18 @@
+{
+	"source": "UE",
+	"applications": [
+		{
+			"app_key": "application.generated.ue.virtual-production-15228867.ue4editor.exe",
+			"launch_type": "url",
+			"url": "steam://launch/",
+			"action_manifest_path": "C:/Users/UTiM/Documents/GitHub/VP_Demo/Config/SteamVRBindings/steamvr_manifest.json",
+			"strings":
+			{
+				"en_us":
+				{
+					"name": "Virtual Production-15228867 [UE Editor]"
+				}
+			}
+		}
+	]
+}
