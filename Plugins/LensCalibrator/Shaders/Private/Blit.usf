@@ -1,0 +1,46 @@
+/* Copyright (C) Polypulse LLC - All Rights Reserved
+ * Written by Sean Connor <sean@polypulse.io>, April 2020 */
+
+#pragma once
+
+#include "/Engine/Public/Platform.ush"
+
+Texture2D InTexture;
+SamplerState InTextureSampler;
+float2 InFlipDirection;
+
+struct InputVS
+{
+	float4 Position : ATTRIBUTE0;
+	float2 UV : ATTRIBUTE1;
+};
+
+struct OutputVS
+{
+	float4	Position : SV_POSITION;
+	float4	UV : TEXCOORD0;
+};
+
+struct OutputPS
+{
+	float4 Color : SV_Target0;
+};
+
+OutputVS MainVS(InputVS IN)
+{
+	OutputVS Out;
+	
+	Out.Position = float4(IN.Position.xy * 2.0 - 1.0, 0, 1);
+	Out.UV = float4(IN.UV, 0.0f, 1.0f);
+
+	return Out;
+}
+
+OutputPS MainPS(OutputVS IN)
+{
+	OutputPS Out;
+	float4 pixel = InTexture.Sample(InTextureSampler, float2(InFlipDirection.x < 0.0f ? 1.0f - IN.UV.x : IN.UV.x, InFlipDirection.y < 0.0f ? 1.0f - IN.UV.y : IN.UV.y));
+	float grayScale = pixel.r * 0.21f + pixel.g * 0.72f + pixel.b * 0.07f;
+	Out.Color = float4(grayScale, grayScale, grayScale, 1.0);
+    	return Out;
+}
